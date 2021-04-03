@@ -1,0 +1,288 @@
+body {
+  font-family: "Lato", sans-serif;
+ background-color:rgb(40,40,40);
+}
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  box-shadow: 5px 7px 10px black;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgb(25,25,25);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 600px) {
+  .sidenav {padding-top: 0px;  width: 100px; height:82%;}
+  .sidenav a {font-size: 10px;}
+}
+/*STYLE FOR VIEwS-POST*/
+
+#viewpost{
+  width: 60%;
+  height: 550px;
+  border: 1px solid black;
+  position: relative;
+  left:20%;
+  box-shadow: 5px 7px 10px black;
+  background-color:rgb(25,25,25);
+}
+
+#title , .label{
+  color:white;
+  font-size:80%;
+  position: relative;
+  left:0px;
+
+}
+
+
+#linkviews{
+  position:relative;
+  text-decoration: none;
+  color : white;
+  display:block;
+
+}
+#linkviews:hover{
+  position: relative;
+  background-color:rgb(45,45,45);
+  border-radius: 10%;
+}
+
+@media screen and (max-height: 600px) {
+  #viewpost {
+    padding-top: 0px;
+      width: 250px;
+      height: 400px;
+      position: relative;
+      top:20px;
+      left:-80px;
+    }
+  #title{font-size: 10px;}
+  #linkviews{font-size: 10px;}
+}
+/*Buttons of Views-Posts*/
+.carousel-prev{
+	color: rgba(255,255,255, 6);
+ font-size: 70px;
+ position: absolute;
+ top:200px;
+ left:-50px;
+ border:0px;
+ background-color:rgba(0,0,0, 0.0);
+
+
+
+}
+.carousel-next{
+	color: rgba(255,255,255, 6);
+ font-size: 70px;
+ position: absolute;
+ top:200px;
+ right:-50px;
+ border:0px;
+ background-color:rgba(0,0,0, 0.0);
+
+
+}
+
+.slick-slider{
+  width: 100%;
+  height: 600px;:
+  border :10px solid black;
+  animation: cssAnimation 0s 1s forwards;
+  visibility: hidden;
+}
+
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+/*Create-Post.php file Style*/
+
+.Article_content{
+  width:65%;
+  height:100%;
+ margin-left:20%;
+
+}
+#formCreate{
+  animation: cssAnimation 0s 1s forwards;
+  visibility: hidden;
+}
+
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+#topics , #slug-target ,#slug-source,#Topicsinp{
+  position :relative;
+  width: 15%;
+  padding: 12px 20px;
+  margin-left: 8px ;
+}
+
+
+.button{
+  font-size:140%;
+  position :relative;
+  top:75px;
+  width:10%;
+  height:30px;
+  border: 0px;
+  background-color:lightgray;
+}
+.button:hover{
+  transition:0.6s;
+  transform:scale(1.1);
+  background-color : gray ;
+  box-shadow: 5px 5px 5px black;
+}
+
+#butslug {
+  position: absolute;
+  top:90%;
+  left:62%;
+
+}
+#butfile{
+  position: absolute;
+  top:90%;
+  left:77%;
+}
+#create-post-Submit{
+  position: absolute;
+  top:100%;
+  left:50%;
+}
+/*Style topics */
+#body-topics{
+  width: 60%;
+  height: 550px;
+  border: 1px solid black;
+  position: relative;
+  left:30%;
+  box-shadow: 5px 7px 10px black;
+  background-color:rgb(25,25,25);
+}
+
+#Topicsinp{
+ margin-left:25%;
+}
+.label{
+  position: absolute;
+  margin-left:20%;
+}
+
+.div-form{
+  margin-top:10%;
+}
+
+
+
+#TopicsBut{
+  font-size:140%;
+  position :relative;
+  margin-left:5%;
+  width:10%;
+  height:30px;
+  border: 0px;
+  background-color:lightgray;
+}
+
+#TopicsBut:hover{
+  transition:0.6s;
+  transform:scale(1.1);
+  background-color : gray ;
+  box-shadow: 5px 5px 5px black;
+}
+#topics-views{
+    padding:20px;
+    width:770px;
+    height:300px;
+    position:absolute;
+    top : 145px ;
+    left : 30%;
+}
+
+#topiclink{
+  position:relative;
+  text-decoration: none;
+  color : white;
+  display:block;
+
+}
+#topiclink:hover{
+  position: relative;
+  background-color:rgb(45,45,45);
+  border-radius: 10%;
+}
+/*Users */
+#userstyle{
+  width:800px;
+  height:500px;
+  background-color: rgb(25,25,25);
+  margin-left:400px;
+  z-index: 0.5;
+}
+
+#containeusers{
+  margin-top: 10%;
+  width: 100%;
+  height:400px;
+  z-index: 1;
+}
+
+
+.carousel-prev-us{
+	color: rgba(255,255,255, 6);
+ font-size: 70px;
+ position: absolute;
+ top:200px;
+ left:25%;
+ border:0px;
+ background-color:rgba(0,0,0, 0.0);
+
+
+
+}
+.carousel-next-us{
+	color: rgba(255,255,255, 6);
+ font-size: 70px;
+ position: absolute;
+ top:200px;
+ right:5%;
+ border:0px;
+ background-color:rgba(0,0,0, 0.0);
+}
+
+#pstyleusers{
+  font: 14%;
+  display: inline;
+  color:white;
+}
