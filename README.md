@@ -11,3 +11,5 @@ A blog written from scratch with PHP-MySQL-javascript-CSS-HTML
 5)In the /DEMO-BLOG/app/database/dbh-process.php 
 The data for the connection with the database
 And now you have a fully functional blog.
+
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
