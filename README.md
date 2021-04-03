@@ -14,4 +14,8 @@ And now you have a fully functional blog.
 
 Here are some image .
 
-![Alt text](https://raw.githubusercontent.com/the-alex-21/demo-blog/main/Screenshot%20(11).png "Intro-blog")
+![Alt text](https://raw.githubusercontent.com/the-alex-21/demo-blog/main/Screenshot%20(11).png "Intro-blog")D
+
+![Alt text](https://raw.githubusercontent.com/the-alex-21/demo-blog/main/Screenshot%20(12).png "Intro-blog")D
+
+![Alt text](https://raw.githubusercontent.com/the-alex-21/demo-blog/main/Screenshot%20(14).png "Intro-blog")D
