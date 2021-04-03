@@ -7,3 +7,7 @@ A blog written from scratch with PHP-MySQL-javascript-CSS-HTML
  mysql -u root -pmysql < all_databases.sql
  
  Good now you have the database .
+ 
+5)In the /DEMO-BLOG/app/database/dbh-process.php 
+The data for the connection with the database
+And now you have a fully functional blog.
