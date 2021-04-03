@@ -12,4 +12,6 @@ A blog written from scratch with PHP-MySQL-javascript-CSS-HTML
 The data for the connection with the database
 And now you have a fully functional blog.
 
+Here are some image .
+
 ![Alt text](https://raw.githubusercontent.com/the-alex-21/demo-blog/main/Screenshot%20(11).png "Intro-blog")
