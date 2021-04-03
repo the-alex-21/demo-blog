@@ -1,0 +1,232 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* Sing.up STYLE  Responsive Website  First mibile then tablet and last pc */
+body{
+background: linear-gradient(100deg, rgba(254, 10, 10, 1) 0%, rgba(139, 0, 139, 1) 50%, rgb(75, 0, 130) 100%);
+}
+.singupcont{
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 10px 20px 10px rgba(0, 191, 255,0.4);
+  width:70%;
+  height:500px;
+  position:relative;
+  top:10%;
+  left:20%
+}
+.singupcont label{
+font: bold 100% Georgia, serif;
+color : white ;
+border: 0px;
+text-decoration: none;
+}
+.singupcont input[type=text] ,input[type=password] {
+  position :relative;
+  border: 0px;
+  top:0px;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+.singupcont input[type=text]:focus{
+width: 80%;
+box-shadow: 5px 5px 10px rgba(0, 191, 255,0.5);
+}
+.singupcont input[type=password]:focus{
+width: 80%;
+box-shadow: 10px 5px 10px rgba(0, 191, 255,0.5);
+}
+
+.singupcont button{
+  font-size:140%;
+  width: 70%;
+  height:30px;
+  border: 0px;
+  background-color:lightgray;
+
+}
+.singupcont button:hover{
+  transition:0.6s;
+  transform:scale(1.1);
+  color: white;
+  background-color : gray ;
+  box-shadow: 5px 5px 5px black;
+}
+
+.errorlog{
+  font-size: 20px;
+  position: absolute;
+  color: red;
+  margin-top: 10px;
+  left:30%;
+}
+.corlog{
+  font-size: 20px;
+  position: absolute;
+  color: green;
+  margin-top: 10px;
+  left:30%;
+}
+#Go-to-Log{
+  color:white;
+  position:absolute;
+  margin-top: 50px;
+  font-size:80%;
+}
+#Go-to-Log a {
+  color : white ;
+}
+@media only screen and (min-width:768px) {
+  .singupcont{
+    height:600px;
+    top:15%;
+    left:20%
+  }
+  .singupcont label{
+  font-size: 20px;
+  }
+
+  .errorlog{
+    left:40%;
+  }
+  .corlog{
+    left:40%;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .singupcont{
+    height:500px;
+    width:30%;
+    top:5%;
+    left:30%
+  }
+  .singupcont label{
+  font-size: 20px;
+  }
+  .singupcont input[type=text]{
+   height:20px;
+  }
+  .singupcont td{
+    position: relative;
+    top : -20px;
+}
+}
+/*Log in */
+.welcomelogin{
+margin-top:70px;
+width: 100%;
+height: 598px;
+position: relative;
+align-items: center;
+
+}
+.logincont {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 10px 20px 10px rgba(0, 191, 255,0.4);
+  width:70%;
+  height:400px;
+  position:relative;
+  top:10%;
+  left:20%
+}
+.logincont h1{
+  color:white;
+  margin-left: 30%;
+  position: absolute;
+  top:20px;
+}
+.logincont input{
+  position :relative;
+  left: 20%;
+  padding:0px !important;
+  border: 0px;
+  top:0px;
+  height:30px !important;
+  width: 60%;
+}
+.logincont input[type=text]{
+  margin-top: 70px
+}
+.logincont label {
+  font-weight: bold;
+  color: white;
+  position :relative;
+  left: 20%;
+  top:70px;
+}
+#passlab{
+  top:0px;
+}
+
+.logincont input:focus{
+  transition:0.6s;
+  transform:scale(1.1);
+  box-shadow: 5px 5px 5px black;
+}
+
+.logincont button{
+ position:absolute;
+ top:200px;
+ left:30%;
+ font-size:140%;
+ width: 40%;
+ height:30px;
+ border: 0px;
+ background-color:lightgray;
+}
+.logincont button:hover{
+  transition:0.6s;
+  transform:scale(1.1);
+  color: white;
+  background-color : gray ;
+  box-shadow: 5px 5px 5px black;
+}
+.error{
+  color:red;
+  position:absolute;
+  bottom: 20px;
+  left: 30%;
+}
+
+#Go-to-r{
+  color:white;
+  position:absolute;
+  margin-top: 185px;
+  font-size:80%;
+}
+#Go-to-r a {
+  color : white ;
+}
+@media only screen and (min-width:768px) {
+  .welcomelogin{
+    margin-top:70px;
+    width: 100%;
+    height: 950px;}
+  .logincont {
+    top:20%;
+    left: 13%;
+  }
+  .logincont h1{
+    color:white;
+    margin-left: 40%;
+  }
+  .error{
+    font-size: 30px;
+    left: 30%;
+  }
+}
+@media only screen and (min-width:768px) {
+  .welcomelogin{
+    height: 550px;}
+    .logincont {
+     width:60%;
+     left: 20%;
+    }
+    .error{
+      font-size: 30px;
+      left: 35%;
+    }
+
+}

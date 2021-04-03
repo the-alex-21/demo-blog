@@ -1,0 +1,469 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: rgb(45,45,45)
+}
+
+/* NAV.PHP STYLE  Responsive Website  First mibile then tablet and last pc  from 6 to 134 */
+.topnav{
+  background: rgb(25,25,25);
+  width:100%;
+  height:70px;
+  position:fixed;
+  top : 0%;
+  border-bottom: 2px solid black;
+  box-shadow: 0px 5px 10px black;
+  z-index: 1;
+}
+ .topnav a img {
+   width:44px;
+   height:44px;
+   border:0
+ }
+ .topnav #myBtn  ,#LogIn , #Blogs{
+   position:relative;
+   left:170px;
+   margin-left: 10px;
+   margin-top: 20px;
+   background-color:transparent;
+ }
+#Blogs:hover{
+   color : white;
+ }
+
+#logo{
+  position: absolute;
+  margin-top: 10px;
+}
+
+ .topnav #LogIn , #Blogs ,#About ,#Singup{
+ color : gray ;
+ border: 0px;
+ text-decoration: none;
+ font: bold 150% Georgia, serif;
+ }
+
+
+.topnav #About ,#Singup {
+  display: none;
+}
+#myBtn{width:15px;}
+ /* The Modal (background) */
+ .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+ }
+
+ /* Modal Content */
+ .modal-content {
+   background-color: rgba(255,255,255,0.8);
+   margin: auto;
+   padding: 20px;
+   width: 80%;
+ }
+
+ /* The Close Button  of search , about ,Contact Us , close-Privacy*/
+ .close ,.close-About , .close-Contact-Us , .close-Privacy {
+   position:relative;
+   top:0px;
+   right:0px;
+   color: rgb(25,25,25);
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+   cursor: pointer;
+ }
+
+/*Nav.php for tablet*/
+@media only screen and (min-width:768px) {
+  .topnav{
+    height: 90px;
+  }
+  .topnav #About ,#Singup  ,#LogIn , #Blogs ,#myBtn {
+    font-size: 30px;
+    display:inline;
+    position:relative;
+    top : 20px ;
+    left:150px;
+    margin-left: 20px;
+    color : gray ;
+    text-shadow: 0px 0px  gray;
+    text-decoration: none !important;
+  }
+  #myBtn{width:21px;}
+  .topnav a img {
+    width:70px;
+    height:70px;
+    border:0
+  }
+  #logo{
+    position: absolute;
+    left: 20px;
+    top: 8px;
+  }
+  #LogIn:hover{
+     color : white;
+   }
+   #About:hover{
+      color : white;
+    }
+    #Singup:hover{
+       color : white;
+     }
+   .modal-content label{
+     font-size:30px;
+     font-weight: bold;
+   }
+    #search-input{
+    box-sizing: content-box;
+    height:20px;
+    width:80%;
+   }
+   #search-input:focus{
+   width:100%;
+   height:30px;
+     box-shadow: 0px 5px 10px rgb(75, 0, 130);
+
+  }
+
+}
+
+/*Nav.php for Pc*/
+@media only screen and (min-width:1000px) {
+  .topnav{
+    height: 90px;
+  }
+  .topnav #About ,#Singup  ,#LogIn , #Blogs,#myBtn  {
+    left:60% !important;
+    font-size:30px !important;
+  }
+}
+
+
+
+/*STYLE Index.php  Responsive Website  First mibile then tablet and last pc*/
+.indexwelcome{
+  margin-top:70px;
+  width: 100%;
+  height: 599px;
+  position: relative;
+  align-items: center;
+  z-index: 0.5;
+  background: linear-gradient(100deg, rgba(254, 10, 10, 1) 0%, rgba(139, 0, 139, 1) 50%, rgb(75, 0, 130) 100%);
+
+}
+#scroll-img{
+  position: absolute;
+  top:70%;
+  left :30%;
+  display: none;
+}
+.Cont-text{
+ position:absolute;
+ top:50px;
+ width: 100%;
+ height: 50%;
+}
+.home .home-text{
+ text-align: center;
+ position: relative;
+ z-index: 0.5;
+}
+.home .home-text h1{
+ color:#ffffff;
+ font-size: 40px;
+ color:#ffffff;
+ line-height: 56px;
+ font-weight: 700;
+ margin:0 0 10px;
+}
+.home .home-text p{
+ margin:0;
+ overflow: hidden;
+}
+.home .home-text p span{
+   font-size: 30px;
+   color:white;
+   font-weight: 700;
+   display: inline-block;
+   line-height: 46px;
+   display: none;
+}
+
+.home .home-text p span.text-in{
+ display: block;
+ animation: textIn .5s ease;
+}
+.home .home-text p span.text-out{
+ animation: textOut .5s ease;
+}
+@keyframes textIn{
+ 0%{
+   transform: translateY(100%);
+ }
+ 100%{
+   transform: translateY(0%);
+ }
+}
+@keyframes textOut{
+ 0%{
+   transform: translateY(0%);
+ }
+ 100%{
+   transform: translateY(-100%);
+
+ }
+}
+/*Tablet index.php*/
+@media only screen and (min-width:768px) {
+  .indexwelcome{
+    margin-top:70px;
+    width: 100%;
+    height: 955px;}
+
+    #scroll-img{
+      top : 60% ;
+      left:40% ;
+    }
+    .Cont-text{
+     position:absolute;
+     top:300px;
+     width: 100%;
+     height: 50%;
+    }
+}
+/*Index.php for pc*/
+@media only screen and (min-width:1000px) {
+  .Cont-text{
+    top:40%;
+  }
+  .indexwelcome{
+    margin-top:70px;
+    width: 100%;
+    height: 555px;}
+
+    #scroll-img{
+      top : 50% ;
+      left:45% ;
+    }
+}
+
+
+
+/*Style for the topics  phone , tablet , pc*/
+.slick-container{
+  margin-top: 10px;
+  width:80%;
+  z-index: 0.5;
+}
+#topicslink{
+  border-width:bold;
+  color:white;
+  font-size:100%;
+  text-decoration: none;
+  animation: cssAnimation 0s 0.5s forwards;
+  visibility: hidden;
+  z-index: 0.5;
+}
+
+
+@keyframes cssAnimation {
+  to   { visibility: visible; } /*so the slick will hae time to load */
+}
+.carousel-prev{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left:0px;
+    margin-top:-55px;
+    border:0px;
+    background-color:rgba(0,0,0, 0.0);
+    z-index: 2;
+    display: none;
+}
+.carousel-next{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right:0px;
+    margin-top:-55px;
+    border:0px;
+    background-color:rgba(0,0,0, 0.0);
+    z-index: 2;
+    display: none;
+}
+@media only screen and (min-width:768px) {
+  #topicslink{
+    font-size:180%;
+    text-decoration: none;
+  }
+ .carousel-next{
+   margin-top:-63px;
+   font-size: 35px;
+ }
+ .carousel-prev{
+   margin-top:-63px;
+   font-size: 35px;
+ }
+}
+/*Blog section phone , tablet , pc */
+.slider-Blogs{
+	position: relative;
+  animation: cssAnimation 0s 0.5s forwards;
+  visibility: hidden;
+  z-index: 0.5;
+}
+
+
+@keyframes cssAnimation {
+  to   { visibility: visible; } /*so the slick will hae time to load */
+}
+.super-cont-b{
+  background-color: rgb(25,25,25);
+}
+.w-t-w{
+  background-color: rgba(255,255,255,0.5);
+  width:80%;
+  margin-top: 50px;
+  height: 60%;
+}
+#title-bolog{
+  font-weight: bold;
+  font-size: 130%;
+
+}
+#linkviews{
+  font-weight: bold;
+  font-size: 130%;
+  position:relative;
+  top:50%;
+  left:28%;
+  text-decoration:none;
+  background-color: #f3ec78;
+  background-image: linear-gradient(100deg, rgba(254, 10, 10, 1) 0%, rgba(139, 0, 139, 1) 50%, rgb(75, 0, 130) 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+
+.prev-Blog , .next-Blog{
+  font-size: 500%;
+  color:white;
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  bottom:-45%;
+  index:4;
+  display: none;
+}
+.prev-Blog {
+  left:0px;
+}
+.next-Blog{
+  right: 0px;
+}
+@media only screen and (min-width:768px) {
+  #title-bolog{
+    font-size: 150%;
+
+  }
+}
+/*Footer .php */
+.footer{
+  width:100%;
+  height:90px;
+  text-align: center;
+}
+.footer a {
+  margin:10px;
+  font-weight: bold;
+  font-size: 150%;
+  color:gray;
+  text-decoration: none;
+}
+footer a:hover{
+  color:lightgray;
+}
+.footer a  img {
+  margin-top:30px;
+}
+#about-modal .modal-content{
+  width:60%;
+}
+#about-modal p{
+  margin-right:50px;
+}
+#Contact-Us-modal .modal-content{
+  width:60%;
+}
+#Privacy-modal .modal-content{
+  width:60%;
+}
+/*Style for the blog section phone , tablet , pc */
+.blog-article{
+  background: rgba(255,255,255,0.2);
+  width:60%;
+  margin-left: 20%;
+  box-shadow: -20px 0px 0px rgba(255,255,255,0.2);
+  margin-top: 30%;
+}
+.Title-cont-blog{
+  color:white;
+  padding:15px;
+  padding-bottom:30px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.Content-Date{
+  color:white;
+  padding:10px;
+  padding-top:15px;
+}
+@media only screen and (min-width:768px) {
+  .blog-article{
+    margin-top: 20%;
+  }
+.Title-cont-blog{
+  font-size:250%;
+}
+}
+@media only screen and (min-width:1000px) {
+  .blog-article{
+    margin-top: 10%;
+  }
+}
+/*Video section*/
+iframe{
+  width:80%;
+  height:100px ;
+  margin-left:10%;
+ }
+ @media only screen and (min-width:768px) {
+   iframe{
+     height:315px ;
+   }
+ }
+/*code - section */
+.code{
+margin-left:10%;
+width:80%;
+background-color: rgb(25,25,25);
+overflow:auto;
+white-space: nowrap;
+}
